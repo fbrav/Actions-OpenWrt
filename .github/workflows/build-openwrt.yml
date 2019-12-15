@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt-003n
+name: Build OpenWrt-841nV8
 
 on: 
   release:
