@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt-841nV8
+name: Build OpenWrt-hc5962
 
 on: 
   release:
@@ -48,7 +48,7 @@ jobs:
 
     - name: Clone source code
       env: 
-        REPO_URL: git clone https://github.com/Lienol/openwrt
+        REPO_URL: https://github.com/Lienol/openwrt
         REPO_BRANCH: master
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
 
