@@ -102,7 +102,7 @@ jobs:
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         cd openwrt/bin/targets/*/*
-        rm -rf packages
+        rm -rf packages openwrt-armvirt-64-Image-initramfs openwrt-armvirt-64-Image openwrt-armvirt-64-rootfs.cpio.gz openwrt-armvirt-64-root.squashfs.gz
         echo "::set-env name=FIRMWARE::$PWD"
         echo "::set-output name=status::success"
 
