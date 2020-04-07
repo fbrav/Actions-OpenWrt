@@ -1,0 +1,34 @@
+
+config interface 'loopback'
+	option ifname 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config globals 'globals'
+	option ula_prefix 'fdc4:5e1d:8a8f::/48'
+
+config interface 'lan'
+	option type 'bridge'
+	option ifname 'eth0'
+	option proto 'static'
+	option ipaddr '192.168.123.3'
+	option netmask '255.255.255.0'
+	option ip6assign '60'
+
+config interface 'vpn0'
+	option ifname 'tun0'
+	option proto 'none'
+
+config interface 'lte'
+	option proto 'dhcp'
+	option ifname 'eth1'
+
+config interface 'iphone'
+	option proto 'dhcp'
+	option ifname 'eth1'
+
+config interface 'android'
+	option proto 'dhcp'
+	option ifname 'usb0'
+

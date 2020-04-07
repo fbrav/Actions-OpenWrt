@@ -1,0 +1,18 @@
+
+config wifi-device 'radio0'
+	option type 'mac80211'
+	option path 'platform/soc/3f300000.mmcnr/mmc_host/mmc1/mmc1:0001/mmc1:0001:1'
+	option hwmode '11g'
+	option channel '5'
+	option country '00'
+	option legacy_rates '1'
+	option mu_beamformer '0'
+
+config wifi-iface 'default_radio0'
+	option device 'radio0'
+	option network 'lan'
+	option mode 'ap'
+	option ssid 'Raspberry Pi'
+	option encryption 'psk2+ccmp'
+	option key '00000000'
+
